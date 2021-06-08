@@ -3,10 +3,10 @@ title: Repos
 ---
 
 # **Repos & Version control**
-
+---
 ## Intro
 
-TAM uses Bitbucket for version control, and VS Code for a main text editor. With the RTE framework, we use the **Live Server** extension for hot reloading.
+TAM uses Bitbucket for version control, and VS Code for a main text editor. With the RTE framework, we use the **Live Server** extension for hot reloading and **Live Sass Compiler** for `scss` => `css` compilation.
 
 ## Workflow
 
@@ -22,9 +22,9 @@ When creating a repo, you'll be presented with an options page: select a "Projec
 
 ### Add a README.md file
 
-When selecting options it's best practice to include a `README.md `file. While this isn't strictly necessary at setup time, it is key for developers and future project maintenance.
+**Always include a `README.md` file**. While this isn't strictly necessary at setup time, it is key for developers and future project maintenance to have a README in every repo. Currently TAM has **68 pages of repos**, including 4 for examnple (so far) dedicated solely to Citi projects. Without a README and project description (see below), it makes it next to impossible for a dev to navigate this library for specific components, items, notes, whatever, without a previous reference or guidance from a developer who worked on a course.
 
 ### Add a description
 
-It's also good practice to include a short project description directly in Bitbucket at setup. This helps developers navigate the TAM Bitbucket home/projects page and is helpful with a large number of repos. 
+Similar to the above, it's also good practice to include a short project description directly in Bitbucket at setup. This helps developers navigate the TAM Bitbucket home/projects page and is helpful with a large number of repos. 
 
