@@ -43,5 +43,6 @@ For example a carousel could come out of the box with:
 1. Core HTML
 2. Hard coded text as opposed to JSON.keys
 3. Placeholder images (unsplash etc) for slides
-4. Basic, functioning `css` classes
-5. All specific, extraneous javascript related to LMS, mobile detection, etc. being referenced outside of the component so it will still function
+4. Basic, functional `css` classes
+5. Basic, functional javascript
+6. All specific, extraneous javascript related to LMS, mobile detection, etc. being referenced outside of the component so it will still function
