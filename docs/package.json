@@ -1,0 +1,23 @@
+{
+  "name": "vuepress_demo",
+  "version": "0.0.1",
+  "description": "TAM dev docs demo",
+  "main": "index.js",
+  "authors": {
+    "name": "",
+    "email": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "/vuepress_demo"
+  },
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  },
+  "author": ""
+}
