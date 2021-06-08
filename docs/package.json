@@ -19,5 +19,8 @@
   "devDependencies": {
     "vuepress": "^1.5.3"
   },
-  "author": ""
+  "author": "",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
 }

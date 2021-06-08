@@ -1,9 +1,9 @@
 ---
 home: true
-heroImage: https://source.unsplash.com/random/400x400?code
+heroImage: https://source.unsplash.com/random/300x300?code
 tagline: Technical & style documentation for developers
 actionText: Get started →
-actionLink: /home/
+actionLink: /guide/
 features:
   - title: Frontend Developer
     details: I am a frontend developer with expertise in Vue.js and Nuxt.js
@@ -15,3 +15,5 @@ features:
     details: Travelling is my favourite activity, I am an avid hiker and backpacker
 footer: Developed using VuePress ♥️
 ---
+
+<other-component />

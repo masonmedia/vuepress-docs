@@ -1,6 +1,5 @@
 # Vuepress Demo Docs Site
 ---
-
 ## Intro
 ---
 

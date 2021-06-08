@@ -1,11 +1,14 @@
 <template>
   <p class="demo">
-    {{ msg }}
+    {{ message }}
   </p>
 </template>
 
 <script>
   export default {
+    props: [
+      'message'
+    ],
     data() {
       return {
         msg: 'Hello this is <demo-component>'

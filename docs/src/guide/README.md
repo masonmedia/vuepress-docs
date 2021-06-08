@@ -9,19 +9,27 @@ This site is the home of TAM's development documentation.  This is a new venture
 5. Accessibilty
 6. Storyboard
 
-#### Current state
+### Current state
 
 TAM's existing developer docs are mostly in Google Docs format, and are not centralized, in a format that lend themleves to documenting code, nor are they easy to read or extend. This site aims to help with this collating process to make developer lives easier and more fun.
 
-#### Potential for expansion
+### Future state
 
-It also allows room for expansion to include other areas of TAM workflow that are interconnected with development i.e. design, LXD, QA, etc. There could also be a folder for TAM's storyboard format and workflow process.
+It also allows room for expansion to include other areas of TAM workflow that are interconnected with development i.e. design, LXD, QA, etc. The Storyboard folder can also house more content related to improvements and suggestions for future format and workflow process.
 
 ## How to use
 
 These docs are built with Vuepress, a static site generator based on Vue.js. This complements the TAM **Vue** tech stack, and offers a simple, fast, and flexible foundation from which to document dev team processes, practices, updates, and ideas.
 
 Out of the box, Vuepress offers simple navigation, search capability, automatic pagination, and the use of markdown as a core syntax (also allowing and supporting raw HTML, as well as YAML, and JSON).
+
+## Where you are
+
+You are currently on the `README.md` page of the `/guide` folder.
+
+Content in the `README.md` file inside the `guide/` folder acts as the page content when you navigate to the guide menu link (i.e. what would normally be `guide.html`). All other sub pages in the folder get added as children, and are given their own routing and pagination. 
+
+To add subpages to the sidebar, go to `config.js`, find the sidebar object, and copy/paste in page names.
 
 ## Adding files/content
 
@@ -35,11 +43,11 @@ To better organize content, Vuepress uses a folder system to group content into 
 
 Root level `.md` pages are automatically rendered as a route/page by Vuepress. To make them accessible in the menu, they must be added to the `config.js` file.
 
-### Page navigation
+## Page navigation
 
-Vuepress automatically links heading level elements within a markdown page. It also automatically adds those headings to a collapsible sidebar nav, and onclick, will scroll to the corresponding part of the page in the same way a hash is used in standard HTML anchor scrolling.
+Vuepress automatically links heading level elements within a markdown page. It also automatically adds those headings to a left sidebar sub nav which when clicked, will scroll to that heading on the page - in the same way a hash is used in standard HTML anchor scrolling.
 
-Manual links can also be added to markdown to reference part of page by using [this syntax](./README.md#navigation): `[this syntac](./README.md#navigation)`.
+Manual links can also be added to markdown to reference part of page by using [this syntax](./README.md#navigation): `[this syntax](./README.md#navigation)`.
 
 ## Vuepress
 
