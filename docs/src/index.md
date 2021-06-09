@@ -1,6 +1,7 @@
 ---
 home: true
-heroImage: https://source.unsplash.com/random/300x300?code
+heroImage: ./img_sphere.jpg
+# heroImage: https://source.unsplash.com/random/300x300?code
 tagline: Technical & style documentation for developers
 actionText: Get started →
 actionLink: /guide/

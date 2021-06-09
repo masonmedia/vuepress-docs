@@ -3,8 +3,8 @@
 
 This site is the home of TAM's development documentation.  This is a new venture and while it aims to emcompass all of TAM's development processes and workflow, it currently focuses on our main umbrellas:
 
-1. How to/FAQ
-2. UI
+1. Guide (How to, repos, code, etc)
+2. UI (RTE, BootstrapVue, etc)
 3. JSON + content
 4. LMS/SCORM
 5. Accessibilty
@@ -22,9 +22,9 @@ It also allows room for expansion to include other areas of TAM workflow that ar
 
 These docs are built with Vuepress, a static site generator based on Vue.js. This complements the TAM **Vue** tech stack, and offers a simple, fast, and flexible foundation from which to document dev team processes, practices, updates, and ideas.
 
-Out of the box, Vuepress offers simple navigation, search capability, automatic pagination, and the use of markdown as a core syntax (also allowing and supporting raw HTML, as well as YAML, and JSON).
+Out of the box, Vuepress offers built-in routing, easy navigation, search capability, automatic pagination, and the use of markdown as a core syntax (also allowing and supporting raw HTML, as well as YAML, and JSON).
 
-## Where you are
+## You are here
 
 You are currently on the `README.md` page of the `/guide` folder.
 
@@ -36,13 +36,13 @@ To add subpages to the sidebar, go to `config.js`, find the sidebar object, and 
 
 Vuepress has a unique directory stucture that is a bit unusual compared to standard web development file/folder practices:
 
-Individual `.md` files can be created in the root directory, and then added manually to the navbar (see [Navigation](./README.md#navigation) below); but this gets unruly as docs develop and grow, and is not ideal for organization and flexibility.
+Individual `.md` files can be created in the root directory, and then added manually to the navbar (see [Navigation](./README.md#main-navigation) below); but this gets unruly as docs develop and grow, and is not ideal for organization and flexibility.
 
 To better organize content, Vuepress uses a folder system to group content into specific areas. This site has a folder for the main elements of TAM development: JSON, Accessibilty, UI, Components, SCSS, LMS/SCORM, Storyboard, etc. Each folder requires a `README.md` file which acts as that folder's "Home" page content. So instead of having a `JSON.html` page, you have a JSON folder, with a `README.md` file acting as `JSON.html`. Additional `.md` files can then be added to the folder ad nauseum, where each file becomes a 'child' page with its own automatic routing/navigation applied by Vuepress.
 
 ## Main Navigation
 
-Root level `.md` pages are automatically rendered as a route/page by Vuepress. To make them accessible in the menu, they must be added to the `config.js` file.
+Root level `.md` pages are automatically rendered as a routes/pages by Vuepress. To make them accessible in the menu, they must be manually added to the `config.js` file.
 
 ## Page navigation
 

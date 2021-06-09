@@ -1,0 +1,4 @@
+# TAM Blog
+---
+
+<posts />

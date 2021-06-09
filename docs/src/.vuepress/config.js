@@ -28,6 +28,7 @@ module.exports = {
    */
   themeConfig: {
     repo: '',
+    smoothScroll: true,
     editLinks: false,
     docsDir: '',
     editLinkText: '',
@@ -52,6 +53,10 @@ module.exports = {
       {
         text: 'Accessibility',
         link: '/accessibility/',
+      },
+      {
+        text: 'Blog',
+        link: '/blog/',
       }
     ],
     sidebar: {
