@@ -2,7 +2,7 @@
 
 ## Intro
 
-While we technically use Bootstrap, our component "library" is made up of a customized amalgam of "interactions" not limited only to Bootstrap.
+While we use BootstrapVue as our CSS/UI framework, our component library is made up of a customized amalgam of "interactions" not limited only to Bootstrap.
 
 While we do us BS tabs, navs/navbar, modals, and accordions, our carousel is from a (great) third party library, Swiper.js, and other components (flipcards, sticky scroll section, overlay/expand cards) are not BS components except for using native Bootstrap css styles/classes.
 

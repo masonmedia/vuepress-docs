@@ -1,18 +1,21 @@
 <template>
-  <p class="demo">
-    {{ message }}
-  </p>
+  <div>
+    <div class="" v-for="i in items" :key="i.id">
+      <h2>{{ i.title }}</h2>
+      <h4>{{ i.subtitle }}</h4>
+      <p>{{ i.text }}</p>
+    </div>
+</div>
 </template>
 
 <script>
-  export default {
-    props: [
-      'message'
-    ],
-    data() {
+import data from '../public/content.json'
+
+export default {
+  data () {
       return {
-        msg: 'Hello this is <demo-component>'
+          items: data
       }
-    }
   }
+}
 </script>

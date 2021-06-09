@@ -37,10 +37,20 @@ module.exports = {
       {
         text: 'Guide',
         link: '/guide/',
+        items: [
+          { text: 'Welcome', link: '/guide/' },
+          { text: 'Repos', link: '/guide/repos/' },
+          { text: 'Code', link: '/guide/code/' }
+        ]
       },
       {
         text: 'UI',
-        link: '/ui/',
+        items: [
+          { text: 'Overview', link: '/ui/' },
+          { text: 'BootstrapVue', link: '/ui/bootstrap/' },
+          { text: 'Components', link: '/ui/components/' },
+          { text: 'Styling', link: '/ui/styling/' }
+        ]
       },
       {
         text: 'JSON',

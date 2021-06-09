@@ -1,18 +1,26 @@
-# **Welcome to TAM Developer Documentation**
+# **Welcome**
 ---
 
 This site is the home of TAM's development documentation.  This is a new venture and while it aims to emcompass all of TAM's development processes and workflow, it currently focuses on our main umbrellas:
 
-1. Guide (How to, repos, code, etc)
+<ul id="welcome" style="list-style: none; display: flex; flex-wrap: wrap;">
+    <li>Guide (How to, repos, code, etc)</li>
+    <li>UI (RTE, BootstrapVue, etc)</li>
+    <li>JSON + content</li>
+    <li>LMS/SCORM</li>
+    <li>Accessibilty</li>
+    <li>Storyboard</li>
+<!-- 1. Guide (How to, repos, code, etc)
 2. UI (RTE, BootstrapVue, etc)
 3. JSON + content
 4. LMS/SCORM
 5. Accessibilty
-6. Storyboard
+6. Storyboard -->
+</ul>
 
 ### Current state
 
-TAM's existing developer docs are mostly in Google Docs format, and are not centralized, in a format that lend themleves to documenting code, nor are they easy to read or extend. This site aims to help with this collating process to make developer lives easier and more fun.
+TAM's existing developer docs are mostly in Google Docs format, and are not centralized, in a format that lend themleves to documenting code, nor are they easy to read or extend. This site aims to help with this by providing a simple, central docs store to make developer lives easier and more fun.
 
 ### Future state
 
@@ -20,7 +28,7 @@ It also allows room for expansion to include other areas of TAM workflow that ar
 
 ## How to use
 
-These docs are built with Vuepress, a static site generator based on Vue.js. This complements the TAM **Vue** tech stack, and offers a simple, fast, and flexible foundation from which to document dev team processes, practices, updates, and ideas.
+These docs are built with [Vuepress](./README.md#vuepress), a static site generator based on Vue.js. This complements the TAM **Vue** tech stack, and offers a simple, fast, and flexible foundation from which to document dev team processes, practices, updates, and ideas.
 
 Out of the box, Vuepress offers built-in routing, easy navigation, search capability, automatic pagination, and the use of markdown as a core syntax (also allowing and supporting raw HTML, as well as YAML, and JSON).
 
