@@ -32,7 +32,7 @@ citi_owstraining
 </code-block>
 </code-group>
 
-In most cases, WBT names have multiple words, as such naming just gets extended with underscores: 
+In most cases, WBT names have multiple words, as such naming can be extended with underscores: 
 
 <code-group>
 <code-block title="Convention">

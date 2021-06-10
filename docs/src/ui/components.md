@@ -12,9 +12,7 @@ RTE Components are not actually "components" in the modern sense of the word. Th
 
 ## Javascript, JSON, LMS interactions
 
-TAM RTE Components all rely heavily on context-specific code to function: this includes JSON/data structures, javascript, LMS functions, css, and images.
-
-**Currently, if the base HTML of a component is copied and pasted from one project into another, or even from one page to another in the same project, it will not work.**
+Components all rely heavily on context-specific code to function: this includes JSON/data structures, javascript, LMS functions, css, and images. As such, **if the base HTML of a component is copied and pasted from one project into another, or even from one page to another in the same project, it will not work.**
 
 #### JSON
 
@@ -43,4 +41,4 @@ For example a carousel could come out of the box with:
 3. Placeholder images (unsplash etc) for slides
 4. Basic, functional `css` classes
 5. Basic, functional javascript
-6. All specific javascript related to LMS, mobile detection, etc. can be referenced along with, but outside of the component so it will still function
+6. All specific javascript related to LMS, specialized directives, @assetLoaded or image functions, mobile detection, etc. can be referenced along with, but outside of the component so it will still function.
