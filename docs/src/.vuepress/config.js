@@ -65,6 +65,14 @@ module.exports = {
         link: '/accessibility/',
       },
       {
+        text: 'Design',
+        items: [
+          { text: 'Overview', link: '/design/' },
+          { text: 'Storyboard', link: '/design/storyboard/' },
+          { text: 'XD files', link: '/design/xd/' },
+        ]
+      },
+      {
         text: 'Blog',
         link: '/blog/',
       }
