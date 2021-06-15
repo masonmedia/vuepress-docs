@@ -16,7 +16,7 @@ Components all rely heavily on context-specific code to function: this includes 
 
 ### Example
 
-##### **Carousels**
+#### **Carousels**
 
 TAM carousels current have code divided into the base HTML structure, text content in JSON, image/slide urls in an array in the data() option, initialization in the mounted option/hook, and css located in both on-page style tags and separate css files. This means devs need to go to multiple places if edits need to be made to this component.
 
@@ -46,16 +46,6 @@ Unique, contextual `css` classes, or dynamic or inline styles applied to a compo
 
 This also applies to all images associated with a component, be it coming from JSON or the `img` folder.
 
-## A **short example**
-
-A flipcard component from one course was referenced for use in another's storyboard.
-
-First the above process for locating the component was undertaken. The HTML, JSON, and CSS were copied over. Images were commented out. Component did not work. Back to the original course; there was a tangle of related javascript functions in various of the Vue options (data, methods), which were trial and errored to see what was needed.
-
-After 30 minutes, the component finally worked. But with sections commented out, and all the original code still named as such, with keys and IDs from the old/original course.
-
-The next step would be to rename all those keys and IDs to import the proper JSON and images from the current course.
-
 ## Suggestions
 
 While TAM has begun a component repository to act as a global component reference, there needs to be a readily available, working example of each component (a la Bootstrap docs) without all the specific project-related code attached. 
@@ -68,3 +58,87 @@ For example a carousel could come out of the box with:
 4. Basic, functional `css` classes
 5. Basic, functional javascript
 6. All specific javascript related to LMS, specialized directives, @assetLoaded or image functions, mobile detection, etc. can be referenced along with, but outside of the component so it will still function.
+
+## Example: Flipcard component
+
+For this example, context specific code has been commented out. Loops and v-html directives, i18n, functions, etc. are included but commented so they allow the component to function. A placeholder unsplash image is included for the img url.
+
+#### HTML
+
+```
+<b-container class="my-5 pt-5">
+    <b-row class="">
+        <b-col data-aos="fade" class="py-3" md="6" xl="4">
+            // <h2 class="callout-2" v-html="$t('page_3.section_1.title')"></h2>
+            <h2 class="callout-2">Dummy title</h2>
+            <ul class="">
+                // <span v-for="item in $t('page_3.section_1.text_list')" :key="item.id">
+                <span>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                </span>
+            </ul>
+        </b-col>
+        // <b-col data-aos="fade" class="py-3" md="6" xl="4" style="perspective: 1000px;" v-for="(card, index) in $t('page_3.section_1.cards_list')" :key="index">
+        <b-col data-aos="fade" class="py-3" md="6" xl="4" style="perspective: 1000px;">
+            // <a href="#" role="button" class="card flip h-100 2_1_flipcard" @click="flipCard('2_1_flipcard', $event)">
+            <a href="#" role="button" class="card flip h-100 2_1_flipcard" @click="flipCard('2_1_flipcard', $event)">
+                <div class="bg-citi-blue front d-flex flex-column justify-content-end">
+                    <div class="py-4 w-100">
+                        <b-img src="https://source.unsplash.com/700x700/?nature" @load="assetLoaded" class="w-100 absolute z-0 top left"></b-img>
+                        <p class="callout-3 m-0 text-center text-white p-3">Dummy Card title</p>
+                    </div>
+                </div>
+                <div aria-live="polite" class="back position-absolute invisible p-4 back_nobg">
+                    <p class="mt-3">Dummy card text stuff</p>
+                </div>
+            </a>
+        </b-col>
+    </b-row>
+</b-container>
+```
+#### CSS
+```
+// flip cards
+
+.flip,
+.flip:hover {
+    transform-style: preserve-3d;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 0;
+    box-shadow: 0px 0px 5px -3px #000000;
+    min-height: 270px;
+}
+
+.front {
+    background-color: #002D72;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 470px;
+}
+
+.back {
+    transform: rotateY(-180deg);
+    background-color: #fff;
+    overflow: auto;
+}
+
+// flip cards
+```
+#### Javascript
+
+Contextual Javascript resides in the `mixin.js` file under the `flipCard()` function.

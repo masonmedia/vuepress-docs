@@ -123,6 +123,18 @@ module.exports = {
           ]
         }
       ],
+      '/blog/': [
+        {
+          title: 'Blog',
+          collapsable: false,
+          children: [
+            '',
+            'article1',
+            'article2',
+            'article3',
+          ]
+        }
+      ],
     }
   },
 

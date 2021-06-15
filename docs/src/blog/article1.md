@@ -1,10 +1,15 @@
 ---
-title: My first article
+title: Vuepress
 description: Basic intro to vuepress
 author: Andrew
 type: article
 img: /img_laptop.jpg
 ---
+
+# **Article 1**
+---
+
+<img src="/img_laptop.jpg" />
 
 Voluptate exercitation voluptate sunt proident ut culpa irure pariatur ut. Elit excepteur est minim pariatur reprehenderit et adipisicing commodo anim ad dolore dolor reprehenderit. Mollit elit officia non minim deserunt nostrud veniam mollit exercitation nisi. Reprehenderit pariatur laboris consectetur commodo exercitation proident quis velit ex incididunt voluptate. Magna sunt tempor consectetur sunt ex aliqua deserunt sint.
 
