@@ -12,22 +12,22 @@ RTE components are not actually "components" in the modern sense. They are not s
 
 ## **Issues**
 
-Components all rely heavily on context-specific code to function: this includes JSON/data structures, javascript, LMS functions, css, and images. As such, **if the base HTML of a component is copied and pasted from one project into another - or even from one page to another in the same project - it will not work.**
+TAM components all rely heavily on context-specific code to function: this includes JSON/data structures, javascript, LMS functions, css, and images. As such, **if the base HTML of a component is copied and pasted from one project into another - or even from one page to another in the same project - it will not work.**
 
 ### Example
 
 #### **Carousels**
 
-TAM carousels current have code divided into the base HTML structure, text content in JSON, image/slide urls in an array in the data() option, initialization in the mounted option/hook, and css located in both on-page style tags and separate css files. This means devs need to go to multiple places if edits need to be made to this component.
+TAM carousels current have code divided into the base HTML structure, text content in JSON, image/slide urls in an array in the `data()` option, initialization in the `mounted()` option/hook, and css located in both on-page style tags and separate css files. This means devs need to go to multiple places if edits need to be made or if the component is required for another project (see below).
 
 #### **Locating components**
 
 Component code is most often divided between (at minimum) `HTML` and `JSON` files. To copy a component from one project to another is a multistep process: 
 
-+ First the component must be found in the project; this usually entails cloning the repo and clicking through the course to find which page it's on;
++ First the component must be found in the project; this usually entails cloning the original repo and clicking through the course to find which page it's on;
 + The first problem occurs when **the pages of the course and the pages of HTML/JSON do not match:**
     - i.e. in `citi_euc`, page 3 of the actual WBT is page 4 of HTML and JSON.
-+ The component then must be located on the page, and copied, in addition to the related JSON, as well as any related javascript and css
++ The component then must be located on the page and copied, in addition to the related JSON, as well as any related javascript and css.
     - it can be a difficult task locating and parsing what custom JS and LMS functions go along with the component (see below).
 
 #### JSON
