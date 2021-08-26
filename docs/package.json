@@ -13,8 +13,7 @@
   },
   "scripts": {
     "dev": "vuepress dev src",
-    "build": "vuepress build src",
-    "docs:build": "vuepress build"
+    "build": "vuepress build src"
   },
   "license": "MIT",
   "devDependencies": {
