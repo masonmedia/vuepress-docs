@@ -11,7 +11,11 @@ TAM code is in a state of constant evolution and development. While standard pra
 
 ## Current state
 
-TAM is currently overhauling a number of practices and standards. This will no doubt lead to a number of ongoing updates however we can begin to log these here:
+TAM is currently updating its stack to use the **Vue CLI**. As such these docs will provide a store of ongoing information and resources as we move through this process.
+
+## Standards and conventions
+
+Currently TAM does not have a standardized set of conventions when it comes to building WBT modules: this pertains to all aspects of our code including HTML/layout, CSS/SASS, JS, JSON, images, folder stucture, and now with the CLI - component design. Moving forward it is advised the team begin to formulate a consistent approach to coding that can help us grow, maintain current projects, and develop new concepts.
 
 ## HTML
 

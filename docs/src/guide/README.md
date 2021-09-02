@@ -14,7 +14,7 @@ This site is the home of TAM's development documentation.  This is a new venture
 
 ### Current state
 
-TAM's existing developer docs are mostly in Google Docs format, and are not centralized, in a format that lend themleves to documenting code, nor are they easy to read or extend. This site aims to help with this by providing a simple, central docs store to make developer lives easier and more fun.
+TAM's existing developer docs are in Google Docs format, are not centralized, in a format that lend themselves to documenting code, nor are they easy to read or extend. This site aims to help with this by providing a simple, central docs store to make developer lives better.
 
 ### Future state
 
