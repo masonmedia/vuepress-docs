@@ -5,7 +5,7 @@ This site is the home of TAM's development documentation.  This is a new venture
 
 <ul id="welcome" style="list-style: none; display: flex; flex-wrap: wrap;">
     <li>Guide (How to, repos, code, etc)</li>
-    <li>UI (RTE, BootstrapVue, etc)</li>
+    <li>UI (CLI, BootstrapVue, animation, etc)</li>
     <li>JSON + content</li>
     <li>LMS/SCORM</li>
     <li>Accessibilty</li>
